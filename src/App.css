@@ -1,0 +1,68 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2D3E50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.square{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D3E50 ;
+  box-shadow: 0 0 5px 5px white;
+}
+
+svg {
+  stroke-width: 6px;
+  stroke: #fff;
+  fill: none;
+  stroke-linecap: round;
+  transition: all 1.5s ease;
+}
+
+.cross{
+  stroke: #fff;
+}
+
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  color: gray;
+}
